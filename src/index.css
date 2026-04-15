@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* If you have a tailwind.config.js, v4 needs you to point to it explicitly */
+@config "../tailwind.config.js";
