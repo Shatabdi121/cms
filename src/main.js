@@ -10,6 +10,9 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
+import Menu from "./Menu";
+import Offers from "./Offers";
+import Contact from "./Contact";
 import { ThemeProvider } from "./ThemeContext";
 const App = () => {
   return (
@@ -35,8 +38,19 @@ const AppRouter = createHashRouter([
       {
         path: "about",
         element: <About />,
-      }
-      
+      },
+      {
+        path: "menu",
+        element: <Menu />,
+      },
+      {
+        path: "offers",
+        element: <Offers />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);

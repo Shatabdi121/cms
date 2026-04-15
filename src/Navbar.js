@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Zap, Sun, Moon } from 'lucide-react';
+import { Menu, Zap, Sun, Moon } from 'lucide-react';
 import { useTheme } from './ThemeContext';
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map(link => (
-              <a key={link} href="#" className="text-sm font-medium hover:text-neon-primary transition-colors">
+              <a key={link} href={`#${link.toLowerCase()}`} className="text-sm font-medium hover:text-neon-primary transition-colors">
                 {link}
               </a>
             ))}
